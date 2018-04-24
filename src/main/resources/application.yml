@@ -1,0 +1,50 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    name: druid
+    initialSize: 12
+    minIdle: 2
+    maxActive: 20
+    maxWait: 20000
+    timeBetweenEvictionRunsMillis: 30000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'y' from DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    removeAbandoned: true
+    removeAbandonedTimeout: 1800
+    logAbandoned: true
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: config,stat,wall
+    connectionProperties: config.decrypt=true;config.decrypt.key=${spring.datasource.publickey};druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    useGlobalDataSourceStat: true
+    url: jdbc:oracle:thin:@//192.168.31.225:1521/oragbst
+    username: xxd_stage
+    password: NG02OkgboAnxTmuzir+HYC5vR9nUGVIFWsQ3dpSjUqsDSzA7qnTUBLbHU3RN5DkGzMg+MdEkD4z58JbxKVHyTw==
+    publickey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKHGwq7q2RmwuRgKxBypQHw0mYu4BQZ3eMsTrdK8E6igRcxsobUC7uT0SoxIjl1WveWniCASejoQtn/BY6hVKWsCAwEAAQ==
+    monitorUserName: xxd_usercenter
+    monitorResetEnable: true
+    monitorPassword: xxd_usercenter
+server:
+  port: 8089
+
+
+project:
+  swagger:
+    base-package: com.example.demo
+    contact-name: ethan
+    description: com.example.demo
+    version: 1.0
+    terms-of-service-url: www.baidu.com
+    title: module_demo
+    contact-email: 18852981776@163.com
+    contact-url: demo.example.com
+test:
+  config:
+       version: 1.01
+       uriIgnore: 1
