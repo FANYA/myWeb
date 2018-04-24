@@ -110,11 +110,6 @@
             <version>${druid.version}</version>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>com.hynnet</groupId>
-            <artifactId>oracle-driver-ojdbc_g</artifactId>
-            <version>${oracle.version}</version>
-        </dependency>
     </dependencies>
     <build>
         <finalName>SpringBoot</finalName>
