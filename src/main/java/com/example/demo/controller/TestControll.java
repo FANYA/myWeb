@@ -41,6 +41,7 @@ public class TestControll {
     public String testGetVersion(@ApiIgnore @RequestAttribute BaseRequest baseRequest) {
         log.info("getVersion");
         String result = userService.returnVersion();
+
         return result;
     }
 
