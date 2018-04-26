@@ -1,3 +1,4 @@
+<!--
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
@@ -17,46 +18,46 @@
             <property name="suppressDate" value="true" />
         </commentGenerator>
 
-        <!-- test数据库-->
+        &lt;!&ndash; test数据库&ndash;&gt;
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://47.93.13.5:3306/mysql"
                         userId="root"
                         password="123456">
         </jdbcConnection>
-        <!-- test数据库-->
-     <!-- <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+        &lt;!&ndash; test数据库&ndash;&gt;
+     &lt;!&ndash; <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
                         connectionURL="jdbc:oracle:thin:@//192.168.31.223:1521/oraga"
                         userId="xxd_v6_test"
                         password="Fc9a5cc">
-        </jdbcConnection>-->
+        </jdbcConnection>&ndash;&gt;
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="true" />
         </javaTypeResolver>
 
-        <!-- 自动生成 entity -->
+        &lt;!&ndash; 自动生成 entity &ndash;&gt;
         <javaModelGenerator targetPackage="com.example.demo.dao.entity"
                             targetProject="${java.dir}">
             <property name="enableSubPackages" value="false" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
-        <!-- 自动生成 xml -->
+        &lt;!&ndash; 自动生成 xml &ndash;&gt;
         <sqlMapGenerator targetPackage="com.example.demo.dao.mapper"
                           targetProject="${java.dir}">
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
 
-        <!-- 自动生成 mapper 接口 -->
+        &lt;!&ndash; 自动生成 mapper 接口 &ndash;&gt;
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.demo.dao.mapper" targetProject="${java.dir}">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
 
-        <!-- 需要生成的表 -->
-        <!-- 新表需要生成基础文件时，只需更改一下 tableName & domainObjectName 两个字段 -->
+        &lt;!&ndash; 需要生成的表 &ndash;&gt;
+        &lt;!&ndash; 新表需要生成基础文件时，只需更改一下 tableName & domainObjectName 两个字段 &ndash;&gt;
         <table tableName="user" domainObjectName="User" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
             <property  name="user" value="false" />
         </table>
 
     </context>
-</generatorConfiguration>
+</generatorConfiguration>-->
