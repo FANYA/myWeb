@@ -115,14 +115,14 @@
     <build>
         <finalName>SpringBoot</finalName>
 
-        <plugins>
+        <!--<plugins>
             <plugin>
-                <!--Mybatis-generator插件,用于自动生成Mapper和POJO-->
+                &lt;!&ndash;Mybatis-generator插件,用于自动生成Mapper和POJO&ndash;&gt;
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
                 <version>1.3.2</version>
                 <configuration>
-                    <!--配置文件的位置-->
+                    &lt;!&ndash;配置文件的位置&ndash;&gt;
                     <configurationFile>src/main/resources/mybatis-generator.xml</configurationFile>
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
@@ -152,12 +152,12 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
-            <!--该插件的主要功能是进行项目的打包发布处理-->
+            &lt;!&ndash;该插件的主要功能是进行项目的打包发布处理&ndash;&gt;
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.5.4.RELEASE</version>
-                <configuration> <!--设置程序执行的主类-->
+                <configuration> &lt;!&ndash;设置程序执行的主类&ndash;&gt;
                     <mainClass>com.example.demo.Application</mainClass>
                 </configuration>
                 <executions>
@@ -168,7 +168,7 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins>
+        </plugins>-->
         <resources>
             <resource>
                 <!--此处配置到java是因为mapper.xml文件在java目录-->
